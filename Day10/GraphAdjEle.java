@@ -1,7 +1,7 @@
-import java.util.*;
 //coding ninjas striver sheet weird question check again 
 // https://www.naukri.com/code360/problems/creating-and-printing_1214551?utm_source=striver&utm_medium=website&utm_campaign=a_zcoursetuf&leftPanelTabValue=SOLUTION
 // Graph Representation | Java
+import java.util.*;
 public class Solution {
     public static int[][] printAdjacency(int n, int m, int[][] edges) {
         // Write your code here.
@@ -15,9 +15,9 @@ public class Solution {
             graph[edges[i][1]].add(edges[i][0]);
         }
         //undirected unit wt edges
-
+        // we have adj list now -> graph
         //HAVE TO GET NEIGHBOURS BASICALLY
-        int[][] adjacencyList = new int[n][];
+        int[][] adjacentEleList = new int[n][];
         for(int i=0;i<n;i++){
             int graphSize = graph[i].size();
             int temp[] = new int[graphSize+1];
@@ -27,8 +27,8 @@ public class Solution {
                 temp[j+1] = graph[i].get(j);
             }
 
-            adjacencyList[i] = temp;
+            adjacentEleList[i] = temp;
         }
-        return adjacencyList;
+        return adjacentEleList;
     }
 }
