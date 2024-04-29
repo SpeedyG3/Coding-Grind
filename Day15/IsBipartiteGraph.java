@@ -1,5 +1,6 @@
 //Striver A2Z DSA - graph
 // LC 785. Is Graph Bipartite?
+//DFS soln
 class Solution {
     public boolean isBipartite(int[][] graph) {
         int V = graph.length;
