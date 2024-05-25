@@ -58,7 +58,6 @@ class Solution {
                 }
             }
         }
-        
         return bfs;
     }
 }
